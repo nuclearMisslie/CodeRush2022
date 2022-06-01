@@ -17,7 +17,8 @@
       </div>
       <div class="position magical-point box">
         <div class="mirai-point-title">职位招聘信息</div>
-        <position :position-data="positionData" :is-loading="_isLoading" />
+        <!-- <position :position-data="positionData" :is-loading="_isLoading" /> -->
+        <positionTest />
       </div>
       <div class="row magical-point">
         <div class="mirai-point-title">企业规模-薪资福利</div>
@@ -34,7 +35,8 @@
 
 <script>
 import mapTem from './map'
-import position from './position'
+// import position from './position'
+import positionTest from './positionTest.vue'
 // import salaryExp from './salary-exp'
 import companySize from './company-size'
 import benefit from './benefit'
@@ -48,8 +50,9 @@ export default {
   components: {
     // eduPos: () => import('./edu-pos'),
     mapTem,
-    position,
+    // position,
     // salaryExp,
+    positionTest,
     companySize,
     benefit,
     dateTrend,

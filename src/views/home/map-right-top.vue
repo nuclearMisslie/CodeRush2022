@@ -40,7 +40,7 @@ export default {
             {
               rank: 'TOP1',
               name: '广东省',
-              num: 23132
+              num: 2489
             },
             {
               rank: 'TOP2',
@@ -74,16 +74,14 @@ export default {
             }
           ]
         }
-      ],
-      mapData : []
+      ]
     }
   },
   mounted() {
     setTimeout(() => {
       this.getPctNum(0)
       this.getPctNum(1)
-    }, 1000),
-    this.getMapData()
+    }, 1000)
   },
   created() {
     this.pct.forEach((element, index) => {
@@ -112,10 +110,8 @@ export default {
         }
       })
       this.pctNum[pctAllIdx].num = count / 100
-    },
-    
-  },
-
+    }
+  }
 }
 </script>
 

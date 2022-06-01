@@ -72,13 +72,13 @@ const routes = [
         name: 'Default',
         component: () => import('../views/rank/main.vue'),
         meta: { title: 'Default' }
-      },
-      {
-        path: 'language',
-        name: 'Language',
-        component: () => import('../views/rank/language.vue'),
-        meta: { title: '编程语言排行榜' }
       }
+      // {
+      //   path: 'language',
+      //   name: 'Language',
+      //   component: () => import('../views/rank/language.vue'),
+      //   meta: { title: '编程语言排行榜' }
+      // }
     ]
   },
   {

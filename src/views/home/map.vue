@@ -33,9 +33,7 @@ export default {
     async getMapData() {
       const { data } = await getAllProvince()
       this.mapData = data
-      console.log(this.mapData);
     }
-
   }
 }
 </script>
