@@ -10,7 +10,7 @@ const routes = [
     // component: () => import('../views/position/index.vue')
     component: () => import('../views/home/index.vue'),
     meta: {
-      title: '首页'
+      title: '全国省份分析'
     }
   },
   {
@@ -32,14 +32,16 @@ const routes = [
       {
         path: 'analysis',
         name: 'Analysis',
+        // 待更新
         component: () => import('../views/position/analysis.vue'),
-        meta: { title: '职位分析' }
+        meta: { title: '岗位多维度分析' }
       },
       {
         path: 'compared',
         name: 'Compared',
+        // 待更新
         component: () => import('../views/position/compared.vue'),
-        meta: { title: '职位对比' }
+        meta: { title: '薪资多维度分析' }
       }
     ]
   },

@@ -2,7 +2,8 @@
   <div class="view-container">
     <div class="main-index">
       <div class="row row-map magical-point">
-        <div class="mirai-point-title">全国省份信息</div>
+        <!-- 更新后 -->
+        <div class="mirai-point-title">全国省份分析</div>
         <div class="map-left box-left">
           <mapTem />
         </div>

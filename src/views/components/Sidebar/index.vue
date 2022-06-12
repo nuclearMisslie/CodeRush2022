@@ -8,7 +8,7 @@
     <el-submenu index="1">
       <template slot="title">
         <i class="el-icon-house"></i>
-        <span slot="title">首页</span>
+        <span slot="title">全国省份分析</span>
       </template>
       <el-menu-item
         v-for="(item, idx) in homeRoutes"
@@ -46,10 +46,7 @@ export default {
   data() {
     return {
       homeRoutes: [
-        '全国省份信息',
-        '招聘数据趋势',
-        '职位招聘信息',
-        '企业规模-薪资福利'
+        '招聘数据多维度分析'
       ],
       routes: [
         {
@@ -63,12 +60,12 @@ export default {
             {
               path: '/position/analysis',
               name: 'Analysis',
-              meta: { title: '职位分析' }
+              meta: { title: '岗位多维度分析' }
             },
             {
               path: '/position/compared',
               name: 'Compared',
-              meta: { title: '职位对比' }
+              meta: { title: '薪资多维度分析' }
             }
           ]
         },
@@ -87,26 +84,27 @@ export default {
             }
           ]
         },
-        {
-          path: '/rank',
-          name: 'Rank',
-          meta: {
-            title: '排行榜',
-            icon: 'el-icon-medal'
-          },
-          children: [
-            {
-              path: '/rank/default',
-              name: 'Default',
-              meta: { title: 'Default' }
-            },
-            {
-              path: '/rank/language',
-              name: 'Language',
-              meta: { title: '编程语言排行榜' }
-            }
-          ]
-        },
+        // 更新
+        // {
+        //   path: '/rank',
+        //   name: 'Rank',
+        //   meta: {
+        //     title: '排行榜',
+        //     icon: 'el-icon-medal'
+        //   },
+        //   children: [
+        //     {
+        //       path: '/rank/default',
+        //       name: 'Default',
+        //       meta: { title: 'Default' }
+        //     },
+        //     {
+        //       path: '/rank/language',
+        //       name: 'Language',
+        //       meta: { title: '编程语言排行榜' }
+        //     }
+        //   ]
+        // },
         {
           path: '/mirai',
           name: 'Mirai',
